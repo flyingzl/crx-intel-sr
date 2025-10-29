@@ -34,7 +34,7 @@ def read_message(proc):
 
 def test_native_app():
     """测试native应用"""
-    exe_path = r"sr-native\target\release\sr-native.exe"
+    exe_path = r"..\target\release\sr-native.exe"
     
     try:
         # 启动native应用
@@ -74,3 +74,4 @@ def test_native_app():
 
 if __name__ == "__main__":
     test_native_app()
+    print(1)
