@@ -84,8 +84,8 @@ cd ..
 // 检查 API 是否可用
 if (window.nativeApi && window.nativeApi.isAvailable()) {
 
-  // 启用超分辨率（默认模式1）
-  const srResult = await window.nativeApi.turnOnSR(1);
+  // 启用超分辨率（默认模式0）
+  const srResult = await window.nativeApi.turnOnSR(0);
   console.log('SR Enabled:', srResult);
 
   // 关闭超分辨率
