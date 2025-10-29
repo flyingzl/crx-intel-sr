@@ -1,0 +1,9 @@
+{
+  "name": "com.miguvideo.sr",
+  "description": "MiguVideo Super Resolution Native Host",
+  "path": "D:\\codes\\sr-extension\\sr-native\\target\\release\\sr-native.exe",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://hpccmdbokbdkdgfdjpliidbljlecogne/"
+  ]
+}

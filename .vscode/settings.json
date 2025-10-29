@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "*.glsl": "glsl",
+        "*.scene": "json",
+        "*.meta": "json",
+        "*.mtl": "json",
+        "*.fire": "json",
+        "*.cjson": "jsonc",
+        "*.wxss": "css",
+        "*.wxs": "javascript",
+        "*.css": "tailwindcss",
+        "iostream": "cpp"
+    }
+}

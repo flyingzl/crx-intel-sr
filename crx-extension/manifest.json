@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "MiguVideo Super Resolution",
+  "version": "1.0.0",
+  "description": "A Chrome extension that provides super resolution enhancement for MiguVideo",
+  "permissions": [
+    "nativeMessaging",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://www.miguvideo.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.miguvideo.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["injected.js"],
+      "matches": ["https://www.miguvideo.com/*"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "MiguVideo Super Resolution"
+  },
+  "externally_connectable": {
+    "matches": ["https://www.miguvideo.com/*"]
+  }
+}

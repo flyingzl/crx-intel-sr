@@ -1,0 +1,9 @@
+{
+  "name": "com.miguvideo.sr",
+  "description": "MiguVideo Super Resolution Native Host",
+  "path": "/Users/zhaolei/Downloads/sr-extension/sr-native/target/release/sr-native",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://neicoldfpennmbllehnflmglaiklllmk/"
+  ]
+}

@@ -1,0 +1,21 @@
+Windows Registry Editor Version 5.00
+
+; MiguVideo Super Resolution Native Messaging Host Registration
+; This file registers the native messaging host for Chrome on Windows
+; 
+; Usage:
+; 1. Update the path below to match your actual installation directory
+; 2. Double-click this file to import into Windows Registry
+; 3. Or run: reg import sr.reg from command line
+;
+; Note: You need to update the path to match your Windows installation directory
+; Example: C:\Users\YourName\sr-extension\sr-native\target\release\sr-native.exe
+
+[HKEY_CURRENT_USER\SOFTWARE\Google\Chrome\NativeMessagingHosts\com.miguvideo.sr]
+@="D:\\codes\\sr-extension\\sr-registered\\com.miguvideo.sr.windows.json"
+
+; Alternative system-wide registration (requires administrator privileges)
+; Uncomment the following lines if you want to install for all users:
+;
+; [HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\com.miguvideo.sr]
+; @="C:\\Program Files\\MiguVideo SR\\sr-registered\\com.miguvideo.sr.json"
